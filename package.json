@@ -1,0 +1,17 @@
+{
+  "name": "mousemind-onchain",
+  "version": "1.0.0",
+  "description": "MouseMind Onchain: 3D biophysical cortical simulation coupled to Robinhood Chain consensus and $MOUSE contract 0x6e7c924b9150ddf1cdb73b58b4285d10cd65690b.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174 --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MouseMind Onchain // Neural Experiment Lobby</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="src/styles/lobby.css">
+</head>
+<body>
+
+  <!-- Ambient Grid Background -->
+  <div class="bg-ambient-grid" aria-hidden="true"></div>
+
+  <!-- Top Operation Navigation -->
+  <header class="header-bar">
+    <div class="wrap wide header-inner">
+      <div class="logo-lockup">
+        <div class="logo-mark">
+          <img src="assets/icon.png" alt="MouseMind Specimen Icon" class="logo-img">
+        </div>
+        <span class="logo-title">MOUSEMIND</span>
+        <span class="logo-badge">ONCHAIN</span>
+      </div>
+
+      <nav class="header-links">
+        <a href="https://mousemind.tech">MAIN DOSSIER</a>
+        <a href="https://mousemind.tech/#specimen">3D SPECIMEN</a>
+        <a href="https://mousemind.tech/#histology">HISTOLOGY SLICE</a>
+        <a href="https://mousemind.tech/#layer2">LAYER 2 PROTOCOL</a>
+        <a href="/" style="color:#00ffb2; font-weight:700;">3D LOBBY</a>
+        <a href="https://mousemind.tech/backrooms" class="btn-vivarium-launch">ENTER VIVARIUM →</a>
+        <div class="header-socials">
+          <a href="https://github.com/amousemind/mousemind-onchain" target="_blank" rel="noopener noreferrer" class="header-social-btn" aria-label="GitHub Repository" title="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://x.com/amousemind" target="_blank" rel="noopener noreferrer" class="header-social-btn" aria-label="X Profile" title="X">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Smart Contract Attestation Bar -->
+  <div class="contract-bar">
+    <div class="wrap wide contract-inner">
+      <div>
+        <div style="font-family:var(--mono); font-size:10.5px; color:var(--text-gray-400); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <span>SMART CONTRACT ATTESTATION · $MOUSE</span>
+          <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981; box-shadow:0 0 8px #10b981;"></span>
+          <span style="color:#10b981; font-weight:600;">VERIFIED ONCHAIN</span>
+        </div>
+        <div class="contract-text" id="ca-address" style="font-size:14px; font-weight:600; color:#ffffff; user-select:all; letter-spacing:0.04em;">0x6e7c924b9150dDf1Cdb73b58B4285D10cd65690B</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+        <button class="btn-copy-contract" id="btn-copy-ca" title="Copy contract address to clipboard">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span>COPY CA</span>
+        </button>
+        <div style="font-family:var(--mono); font-size:11px; color:#10b981; letter-spacing:0.08em; border:1px solid rgba(16,185,129,0.3); padding:7px 14px; border-radius:6px; background:rgba(16,185,129,0.06);">ROBINHOOD CHAIN ACTIVE</div>
+        <div style="font-family:var(--mono); font-size:11px; color:var(--text-gray-400); letter-spacing:0.06em; padding:7px 12px; border:1px solid var(--border-subtle); border-radius:6px; background:#000000;">
+          BLOCK #<span id="val-block-height" style="color:#ffffff; font-weight:700;">CONNECTING...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Laboratory Stage -->
+  <main class="wrap wide" style="margin-top:36px;">
+    <div class="section-header">
+      <div class="section-eyebrow">Subject Alpha · Xenocortex Telemetry</div>
+      <h1 class="section-heading">Subject Alpha 3D Cortical Laboratory</h1>
+      <p class="section-lede">
+        Interactive bioluminescent human xenograft simulation wired directly to Robinhood Chain mainnet and $MOUSE token swaps. Tracking 12000 human cortical somata, GCaMP8f optical calcium kinetics, and onchain synaptic bursts in real time.
+      </p>
+    </div>
+
+    <!-- 3D Specimen Viewport Container -->
+    <div class="phase2-stage-wrapper">
+      <div class="phase2-viewport">
+        <!-- Three.js Canvas -->
+        <canvas id="brain-canvas"></canvas>
+
+        <!-- Perspective Controls Toolbar -->
+        <div class="phase2-toolbar-top">
+          <div class="toolbar-group">
+            <span class="toolbar-label">VIEW:</span>
+            <button class="view-btn active" data-view="isometric">ISOMETRIC</button>
+            <button class="view-btn" data-view="sagittal">SAGITTAL</button>
+            <button class="view-btn" data-view="organoid">ORGANOID ZOOM</button>
+            <button class="view-btn" data-view="top">TOP CORTICAL</button>
+          </div>
+        </div>
+
+        <!-- Layer Toggles and Microstimulation Bar -->
+        <div class="phase2-toolbar-bottom">
+          <div class="toolbar-group">
+            <span class="toolbar-label">LAYERS:</span>
+            <button class="atlas-layer-btn active" data-layer="cortex">Cortex Hull</button>
+            <button class="atlas-layer-btn active" data-layer="organoid">Human Organoid</button>
+            <button class="atlas-layer-btn active" data-layer="axons">Axon Lattice</button>
+            <button class="atlas-layer-btn active" data-layer="impulses">Synaptic Impulses</button>
+          </div>
+
+          <div>
+            <button id="btn-microstim" class="btn-microstim">TRIGGER MICROSTIMULATION PULSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three Column Operational Deck -->
+    <div class="phase2-deck">
+      
+      <!-- Column 1: Electrophysiology & Calcium Kinetics -->
+      <div class="deck-column">
+        <div class="phase2-card">
+          <div class="card-header-clean">
+            <div class="card-title-text">
+              <span>CORTICAL ELECTROPHYSIOLOGY</span>
+            </div>
+            <span class="card-badge green">LIVE SENSORS</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-k">Xenocortex Maturation</span>
+            <span class="stat-v green">Day 248 In Vivo</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Human Soma Count</span>
+            <span class="stat-v">12000 Neurons</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Callosal Ingrowth</span>
+            <span class="stat-v cyan">4.2 mm Penetration</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Connectome Map</span>
+            <span class="stat-v">Bilateral Synaptic</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Resting Potential</span>
+            <span class="stat-v">Polarized 65 mV</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Spike Frequency</span>
+            <span id="val-spike-frequency" class="stat-v green">18.4 HZ</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Calcium Kinetics</span>
+            <span id="val-calcium-df" class="stat-v cyan">+0.38 DF/F0</span>
+          </div>
+
+          <!-- Real Time Mini Calcium Chart -->
+          <div class="chart-box">
+            <div class="chart-meta">
+              <span>GCAMP8F OPTICAL FLUORESCENCE</span>
+              <span>DELTA F / F0</span>
+            </div>
+            <canvas id="calcium-graph"></canvas>
+          </div>
+        </div>
+
+        <div class="phase2-card">
+          <div class="card-header-clean">
+            <div class="card-title-text">
+              <span>TRANSLATIONAL RESEARCH</span>
+            </div>
+            <span class="card-badge purple">STANFORD MODEL</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Target Condition</span>
+            <span class="stat-v purple">Timothy Syndrome</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Gene Defect</span>
+            <span class="stat-v">CACNA1C G406R Gain</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Channel Conduction</span>
+            <span class="stat-v">Voltage Gated L Type Ca2+</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-k">Target Assay</span>
+            <span class="stat-v green">Dendritic Arbor Rescue</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Live $MOUSE Swaps on Robinhood Chain -->
+      <div class="deck-column">
+        <div class="phase2-card" style="height: 100%;">
+          <div class="card-header-clean">
+            <div class="card-title-text">
+              <span>LIVE $MOUSE SWAPS &amp; TRANSFERS</span>
+            </div>
+            <span class="card-badge green">ROBINHOOD MAINNET</span>
+          </div>
+
+          <div style="font-size:11.5px; color:var(--text-gray-400); margin-bottom:12px; line-height:1.5;">
+            Decoded directly from Robinhood Chain Transfer event logs. Every transaction triggers immediate axonal spike bursts across Subject Alpha connectome.
+          </div>
+
+          <div id="swaps-stream" class="swaps-list-container">
+            <div class="swap-row">
+              <div class="swap-left">
+                <span class="swap-type badge-swap">CONNECTING</span>
+                <span class="swap-amount">Querying Robinhood Chain RPC...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Subject Alpha Consciousness & Thought Terminal -->
+      <div class="deck-column">
+        <div class="phase2-card" style="height: 100%;">
+          <div class="card-header-clean">
+            <div class="card-title-text">
+              <span>SUBJECT ALPHA CONSCIOUSNESS CHAT</span>
+            </div>
+            <span class="card-badge green">NEURAL DIALOGUE</span>
+          </div>
+
+          <div style="font-size:11.5px; color:var(--text-gray-400); margin-bottom:12px; line-height:1.5;">
+            Continuous emergent cognitive monologue from the transplanted human organoid. Interrogate Subject Alpha below to test synaptic responsiveness.
+          </div>
+
+          <!-- Chat Monologue Window -->
+          <div id="chat-stream" class="chat-window">
+            <div class="chat-message msg-specimen">
+              <div class="chat-meta">[INIT] SUBJECT ALPHA</div>
+              <div class="chat-body">Synaptic integration online. Human cortical spheroids fully vascularized with host rodent tissue. Ready for interrogation.</div>
+            </div>
+          </div>
+
+          <!-- Interrogation Input Field -->
+          <div class="chat-input-row">
+            <input type="text" id="chat-input" class="chat-input-field" placeholder="Ask Subject Alpha how he feels or test a stimulus..." autocomplete="off">
+            <button id="chat-send-btn" class="btn-send-chat">SEND</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Legal & Community Disclosure -->
+  <footer class="site-footer">
+    <div class="wrap wide footer-inner">
+      <div class="footer-legal">
+        MouseMind is an autonomous bio computational simulation and generative neurotechnology experiment. Connectome data © Allen Institute for Brain Science &amp; IARPA MICrONS under Open Data licenses.
+      </div>
+      <div class="footer-token-disclosure">
+        Associated with the community memecoin on Robinhood named $MOUSE. Verified smart contract address 0x6e7c924b9150dDf1Cdb73b58B4285D10cd65690B. MouseMind is an autonomous neurotechnology research demonstration and scientific simulation. Nothing contained on this website constitutes financial, investment, legal, or trading advice.
+      </div>
+      <div class="footer-links">
+        <a href="https://mousemind.tech">Dossier</a>
+        <a href="https://mousemind.tech/#layer2">Layer 2 Protocol</a>
+        <a href="/">Experiment Lobby</a>
+        <a href="https://mousemind.tech/backrooms">Vivarium</a>
+        <a href="https://github.com/amousemind/mousemind-onchain" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/amousemind" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
